@@ -1,62 +1,150 @@
+import { useState } from "react";
 import "./Gallery.css";
 
 function Gallery() {
-  const galleryItems = [
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const images = [
     {
-      title: "Our Day Care",
-      image: "/images/daycare-1.jpg",
+      src: "/images/2.jpg",
+      alt: "Sibahle Day Care children during an outdoor educational outing",
     },
     {
-      title: "Learning Activities",
-      image: "/images/daycare-2.jpg",
+      src: "/images/3.jpg",
+      alt: "Sibahle Day Care children and staff gathered together",
     },
     {
-      title: "Creative Activities",
-      image: "/images/daycare-3.jpg",
+      src: "/images/4.jpg",
+      alt: "Sibahle Day Care children participating in an outdoor activity",
     },
     {
-      title: "Play & Recreation",
-      image: "/images/daycare-4.jpg",
+      src: "/images/5.jpg",
+      alt: "Sibahle Day Care children and staff during an outdoor group activity",
     },
     {
-      title: "Educational Activities",
-      image: "/images/daycare-5.jpg",
+      src: "/images/6.jpg",
+      alt: "Sibahle Day Care children enjoying an outdoor recreational activity",
     },
     {
-      title: "Our Environment",
-      image: "/images/daycare-6.jpg",
+      src: "/images/7.jpg",
+      alt: "Sibahle Day Care children playing on outdoor equipment",
     },
   ];
 
+  const openImage = (index) => {
+    setSelectedImage(index);
+  };
+
+  const closeImage = () => {
+    setSelectedImage(null);
+  };
+
+  const nextImage = () => {
+    setSelectedImage((current) =>
+      current === images.length - 1 ? 0 : current + 1
+    );
+  };
+
+  const previousImage = () => {
+    setSelectedImage((current) =>
+      current === 0 ? images.length - 1 : current - 1
+    );
+  };
+
   return (
     <main className="gallery-page">
-      <section className="page-hero">
-        <div>
-          <p className="section-label">GALLERY</p>
+
+      {/* Gallery Header */}
+      <section className="gallery-header">
+        <div className="section-container">
+          <p className="section-label">OUR GALLERY</p>
+
           <h1>Life at Sibahle Day Care</h1>
+
           <p>
-            A look at our environment and activities.
+            Take a look at our environment and the activities
+            offered at Sibahle Day Care.
           </p>
         </div>
       </section>
 
+      {/* Gallery */}
       <section className="gallery-section">
-        <div className="content-container">
+        <div className="section-container">
+
           <div className="gallery-grid">
-            {galleryItems.map((item) => (
-              <div className="gallery-item" key={item.title}>
+            {images.map((image, index) => (
+              <button
+                className="gallery-item"
+                key={image.src}
+                onClick={() => openImage(index)}
+                aria-label={`View ${image.alt}`}
+              >
                 <img
-                  src={item.image}
-                  alt={item.title}
+                  src={image.src}
+                  alt={image.alt}
                 />
-                <div className="gallery-caption">
-                  {item.title}
-                </div>
-              </div>
+              </button>
             ))}
           </div>
+
         </div>
       </section>
+
+      {/* Lightbox */}
+      {selectedImage !== null && (
+        <div
+          className="lightbox"
+          onClick={closeImage}
+        >
+
+          <button
+            className="lightbox-close"
+            onClick={closeImage}
+            aria-label="Close image"
+          >
+            ×
+          </button>
+
+          <button
+            className="lightbox-arrow lightbox-prev"
+            onClick={(event) => {
+              event.stopPropagation();
+              previousImage();
+            }}
+            aria-label="Previous image"
+          >
+            ‹
+          </button>
+
+          <div
+            className="lightbox-content"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <img
+              src={images[selectedImage].src}
+              alt={images[selectedImage].alt}
+            />
+
+            <p>
+              {selectedImage + 1} / {images.length}
+            </p>
+          </div>
+
+          <button
+            className="lightbox-arrow lightbox-next"
+            onClick={(event) => {
+              event.stopPropagation();
+              nextImage();
+            }}
+            aria-label="Next image"
+          >
+            ›
+          </button>
+
+        </div>
+      )}
+
     </main>
   );
 }

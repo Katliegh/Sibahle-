@@ -7,6 +7,14 @@ function Home() {
 
       {/* Hero Section */}
       <section className="hero">
+
+        <div className="hero-image">
+          <img
+            src="/images/1.jpg"
+            alt="Sibahle Day Care"
+          />
+        </div>
+
         <div className="hero-content">
           <p className="hero-subtitle">Welcome to</p>
 
@@ -27,11 +35,13 @@ function Home() {
             </Link>
           </div>
         </div>
+
       </section>
 
       {/* About Preview */}
       <section className="home-about">
         <div className="section-container">
+
           <div className="about-content">
             <p className="section-label">ABOUT US</p>
 
@@ -53,6 +63,7 @@ function Home() {
               Learn More →
             </Link>
           </div>
+
         </div>
       </section>
 
@@ -62,7 +73,9 @@ function Home() {
 
           <div className="section-heading">
             <p className="section-label">OUR PROGRAMMES</p>
+
             <h2>What We Offer</h2>
+
             <p>
               Activities designed to support learning,
               development and play.
@@ -73,7 +86,9 @@ function Home() {
 
             <div className="programme-card">
               <div className="programme-icon">👶</div>
+
               <h3>Early Childhood Development</h3>
+
               <p>
                 Activities that support children's early learning
                 and development.
@@ -82,7 +97,9 @@ function Home() {
 
             <div className="programme-card">
               <div className="programme-icon">📚</div>
+
               <h3>Educational Activities</h3>
+
               <p>
                 Learning activities that encourage curiosity,
                 knowledge and development.
@@ -91,7 +108,9 @@ function Home() {
 
             <div className="programme-card">
               <div className="programme-icon">🎨</div>
+
               <h3>Creative Activities</h3>
+
               <p>
                 Creative activities that encourage children to
                 express themselves and develop new skills.
@@ -100,7 +119,9 @@ function Home() {
 
             <div className="programme-card">
               <div className="programme-icon">⚽</div>
+
               <h3>Play & Recreation</h3>
+
               <p>
                 Play and recreational activities that support
                 physical and social development.
@@ -116,14 +137,32 @@ function Home() {
         <div className="section-container">
 
           <div className="hours-content">
+
             <div>
               <p className="section-label">OPERATING HOURS</p>
+
               <h2>We're Here During the Week</h2>
             </div>
 
             <div className="hours-list">
+
               <div>
-                <span>Monday - Thursday</span>
+                <span>Monday</span>
+                <strong>07:00 - 16:00</strong>
+              </div>
+
+              <div>
+                <span>Tuesday</span>
+                <strong>07:00 - 16:00</strong>
+              </div>
+
+              <div>
+                <span>Wednesday</span>
+                <strong>07:00 - 16:00</strong>
+              </div>
+
+              <div>
+                <span>Thursday</span>
                 <strong>07:00 - 16:00</strong>
               </div>
 
@@ -133,10 +172,17 @@ function Home() {
               </div>
 
               <div>
-                <span>Saturday - Sunday</span>
+                <span>Saturday</span>
                 <strong>Closed</strong>
               </div>
+
+              <div>
+                <span>Sunday</span>
+                <strong>Closed</strong>
+              </div>
+
             </div>
+
           </div>
 
         </div>
@@ -157,8 +203,13 @@ function Home() {
 
           <div className="contact-details">
             <p>📞 071 488 2967 / 067 250 5299</p>
+
             <p>✉ VioletMoroko99@gmail.com</p>
-            <p>📍 3871 Monde Str, Lawley 2 Ext 9, Johannesburg, 1824</p>
+
+            <p>
+              📍 3871 Monde Str, Lawley 2 Ext 9,
+              Johannesburg, 1824
+            </p>
           </div>
 
           <Link to="/contact" className="primary-button">
