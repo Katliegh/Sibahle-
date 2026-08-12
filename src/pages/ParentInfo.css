@@ -1,0 +1,91 @@
+.parent-section {
+  background: #fff;
+}
+
+.parent-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.parent-card {
+  padding: 35px;
+  background: #f8f8f8;
+  border-radius: 14px;
+}
+
+.parent-card > span {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 38px;
+}
+
+.parent-card h2 {
+  margin-bottom: 24px;
+  font-size: 26px;
+}
+
+.parent-card p {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.info-row span {
+  color: #555;
+}
+
+.info-row strong {
+  color: #222;
+  text-align: right;
+}
+
+.parent-card ul {
+  padding-left: 20px;
+}
+
+.parent-card li {
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.parent-note {
+  padding: 80px 24px;
+  background: #fff4e6;
+  text-align: center;
+}
+
+.parent-note h2 {
+  margin-bottom: 15px;
+  font-size: 36px;
+}
+
+.parent-note p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+  color: #555;
+}
+
+@media (max-width: 700px) {
+  .parent-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-row {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .info-row strong {
+    text-align: left;
+  }
+}

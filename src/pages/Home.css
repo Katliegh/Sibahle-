@@ -1,0 +1,257 @@
+.home {
+  width: 100%;
+}
+
+/* Hero */
+
+.hero {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  background-color: #fff4e6;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.hero-subtitle,
+.section-label {
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #f28c28;
+}
+
+.hero h1 {
+  max-width: 700px;
+  margin-bottom: 24px;
+  font-size: 64px;
+  line-height: 1.05;
+  color: #222222;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin-bottom: 32px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #555555;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.primary-button,
+.secondary-button {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.primary-button {
+  background-color: #f28c28;
+  color: #ffffff;
+}
+
+.secondary-button {
+  border: 1px solid #f28c28;
+  color: #f28c28;
+  background-color: #ffffff;
+}
+
+/* General Sections */
+
+.section-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 90px 24px;
+}
+
+.section-heading {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.section-heading h2,
+.home-about h2,
+.hours h2,
+.contact-cta h2 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: #222222;
+}
+
+.section-heading p:last-child {
+  color: #666666;
+}
+
+/* About */
+
+.home-about {
+  background-color: #ffffff;
+}
+
+.about-content {
+  max-width: 750px;
+}
+
+.about-content p {
+  margin-bottom: 18px;
+  line-height: 1.7;
+  color: #555555;
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #f28c28;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Programmes */
+
+.programmes {
+  background-color: #f8f8f8;
+}
+
+.programme-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.programme-card {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.programme-icon {
+  margin-bottom: 20px;
+  font-size: 42px;
+}
+
+.programme-card h3 {
+  margin-bottom: 14px;
+  font-size: 20px;
+  color: #222222;
+}
+
+.programme-card p {
+  line-height: 1.6;
+  color: #666666;
+}
+
+/* Hours */
+
+.hours {
+  background-color: #fff4e6;
+}
+
+.hours-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hours-list {
+  width: 400px;
+}
+
+.hours-list div {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.hours-list span {
+  color: #555555;
+}
+
+.hours-list strong {
+  color: #222222;
+}
+
+/* Contact */
+
+.contact-cta {
+  text-align: center;
+}
+
+.contact-cta p {
+  color: #666666;
+}
+
+.contact-details {
+  margin: 30px auto;
+}
+
+.contact-details p {
+  margin-bottom: 10px;
+  color: #444444;
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+  .programme-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hours-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hours-list {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: 550px;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .hero-text {
+    font-size: 17px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section-container {
+    padding: 65px 20px;
+  }
+
+  .section-heading h2,
+  .home-about h2,
+  .hours h2,
+  .contact-cta h2 {
+    font-size: 32px;
+  }
+
+  .programme-grid {
+    grid-template-columns: 1fr;
+  }
+}

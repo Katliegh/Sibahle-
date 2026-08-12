@@ -1,0 +1,42 @@
+.programmes-section {
+  background: #fff;
+}
+
+.programme-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.programme-item {
+  display: flex;
+  gap: 24px;
+  padding: 35px;
+  background: #f8f8f8;
+  border-radius: 14px;
+}
+
+.programme-large-icon {
+  font-size: 48px;
+  flex-shrink: 0;
+}
+
+.programme-item h2 {
+  margin-bottom: 14px;
+  font-size: 24px;
+}
+
+.programme-item p {
+  line-height: 1.6;
+  color: #666;
+}
+
+@media (max-width: 700px) {
+  .programme-list {
+    grid-template-columns: 1fr;
+  }
+
+  .programme-item {
+    flex-direction: column;
+  }
+}
