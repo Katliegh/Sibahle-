@@ -59,12 +59,12 @@ function Home() {
             <div className="upcoming-card">
 
               <div className="upcoming-date">
-                <span className="upcoming-month">AUG</span>
-                <strong>28</strong>
+                <span className="upcoming-month">SEPTEMBER</span>
+              
               </div>
 
               <div className="upcoming-content">
-                <h3>Sports Day</h3>
+                <h3>Massive Birthday</h3>
 
                 <p>
                   A fun day of games, activities and
@@ -80,16 +80,14 @@ function Home() {
             <div className="upcoming-card">
 
               <div className="upcoming-date">
-                <span className="upcoming-month">SEP</span>
-                <strong>12</strong>
+                <span className="upcoming-month">DECEMBER</span>
               </div>
 
               <div className="upcoming-content">
-                <h3>Pyjama Party</h3>
+                <h3>2026 Graduations</h3>
 
                 <p>
-                  A special day filled with fun activities,
-                  games and plenty of smiles.
+                 Celebrate a special milestone with us as our children complete an important stage of their early learning journey. We are proud of their growth, achievements, and progress, and we look forward to seeing them take their next steps with confidence.
                 </p>
 
                 <span>Coming Up</span>
