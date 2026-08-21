@@ -38,6 +38,77 @@ function Home() {
 
       </section>
 
+
+      {/* Upcoming Events */}
+      <section className="upcoming-events">
+        <div className="section-container">
+
+          <div className="section-heading">
+            <p className="section-label">UPCOMING</p>
+
+            <h2>Upcoming Events</h2>
+
+            <p>
+              Keep up with activities and special events
+              happening at Sibahle Day Care.
+            </p>
+          </div>
+
+          <div className="upcoming-grid">
+
+            <div className="upcoming-card">
+
+              <div className="upcoming-date">
+                <span className="upcoming-month">AUG</span>
+                <strong>28</strong>
+              </div>
+
+              <div className="upcoming-content">
+                <h3>Sports Day</h3>
+
+                <p>
+                  A fun day of games, activities and
+                  outdoor recreation for the children.
+                </p>
+
+                <span>Coming Up</span>
+              </div>
+
+            </div>
+
+
+            <div className="upcoming-card">
+
+              <div className="upcoming-date">
+                <span className="upcoming-month">SEP</span>
+                <strong>12</strong>
+              </div>
+
+              <div className="upcoming-content">
+                <h3>Pyjama Party</h3>
+
+                <p>
+                  A special day filled with fun activities,
+                  games and plenty of smiles.
+                </p>
+
+                <span>Coming Up</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div className="upcoming-button">
+            <Link to="/gallery" className="secondary-button">
+              View Events
+            </Link>
+          </div>
+
+        </div>
+      </section>
+
+
       {/* About Preview */}
       <section className="home-about">
         <div className="section-container">
@@ -66,6 +137,7 @@ function Home() {
 
         </div>
       </section>
+
 
       {/* Programmes */}
       <section className="programmes">
@@ -132,6 +204,7 @@ function Home() {
         </div>
       </section>
 
+
       {/* Operating Hours */}
       <section className="hours">
         <div className="section-container">
@@ -187,6 +260,7 @@ function Home() {
 
         </div>
       </section>
+
 
       {/* Contact CTA */}
       <section className="contact-cta">

@@ -71,8 +71,8 @@ const events = [
   },
 
   {
-    id: "principal-visit",
-    title: "Principal's Visit",
+    id: "principal-pictures",
+    title: "Principal's Pictures",
     cover: "/images/gallery/principal/1.jpg",
     images: [
       "/images/gallery/principal/1.jpg",
