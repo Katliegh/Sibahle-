@@ -83,6 +83,7 @@ const events = [
       "/images/gallery/principal/6.jpg",
       "/images/gallery/principal/7.jpg",
       "/images/gallery/principal/8.jpg",
+      "/images/gallery/principal/9.jpg", 
     ],
   },
 
