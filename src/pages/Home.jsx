@@ -59,7 +59,7 @@ function Home() {
             <div className="upcoming-card">
 
               <div className="upcoming-date">
-                <span className="upcoming-month">SEPTEMBER</span>
+                <span className="upcoming-month">SEP</span>
               
               </div>
 
@@ -80,7 +80,7 @@ function Home() {
             <div className="upcoming-card">
 
               <div className="upcoming-date">
-                <span className="upcoming-month">DECEMBER</span>
+                <span className="upcoming-month">DEC</span>
               </div>
 
               <div className="upcoming-content">
