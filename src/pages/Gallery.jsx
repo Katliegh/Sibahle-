@@ -4,15 +4,15 @@ import "./Gallery.css";
 const events = [
   {
     id: "mas-birthday",
-    title: "Ma's Birthday",
+    title: "Massive Birthday",
     cover: "/gallery/events/mas-birthday/1.jpg",
     images: [
-      "images/gallery/events/mas-birthday/1.jpg",
-      "images/gallery/events/mas-birthday/2.jpg",
-      "images/gallery/events/mas-birthday/3.jpg",
-      "images/gallery/events/mas-birthday/4.jpg",
-      "images/gallery/events/mas-birthday/5.jpg",
-      "images/gallery/events/mas-birthday/6.jpg",
+      "/images/gallery/events/massive-birthday/1.jpg",
+      "/images/gallery/events/massive-birthday/2.jpg",
+      "/images/gallery/events/massive-birthday/3.jpg",
+      "/images/gallery/events/massive-birthday/4.jpg",
+      "/images/gallery/events/massive-birthday/5.jpg",
+      "/images/gallery/events/massive-birthday/6.jpg",
     ],
   },
   {
@@ -20,7 +20,7 @@ const events = [
     title: "Sports Day",
     cover: "/gallery/events/sports-day/1.jpg",
     images: [
-      "images/gallery/events/sports-day/1.jpg",
+      "/images/gallery/events/sports-day/1.jpg",
       "images/gallery/events/sports-day/2.jpg",
       "images/gallery/events/sports-day/3.jpg",
       "images/gallery/events/sports-day/4.jpg",
