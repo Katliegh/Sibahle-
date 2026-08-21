@@ -99,7 +99,7 @@ function Home() {
 
           <div className="upcoming-button">
             <Link to="/gallery" className="secondary-button">
-              View Events
+              View Past Events
             </Link>
           </div>
 
