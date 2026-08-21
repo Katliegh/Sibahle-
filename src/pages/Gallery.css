@@ -28,46 +28,73 @@
   color: #66666F;
 }
 
-/* Gallery */
+/* Events */
 
 .gallery-section {
   background-color: #FFFFFF;
 }
 
-.gallery-grid {
+.event-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
-/* Gallery Images */
-
-.gallery-item {
+.event-card {
   width: 100%;
-  height: 320px;
   padding: 0;
   border: 1px solid #E2E2E6;
+  border-radius: 14px;
   overflow: hidden;
-  border-radius: 12px;
-  background-color: #F5F5F7;
+  background: #FFFFFF;
+  text-align: left;
   cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.gallery-item img {
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(75, 52, 127, 0.12);
+}
+
+.event-card:focus {
+  outline: 3px solid #6A4BBC;
+  outline-offset: 3px;
+}
+
+.event-card-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background: #F5F5F7;
+}
+
+.event-card-image img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
-.gallery-item:hover img {
+.event-card:hover .event-card-image img {
   transform: scale(1.04);
 }
 
-.gallery-item:focus {
-  outline: 3px solid #6A4BBC;
-  outline-offset: 3px;
+.event-card-content {
+  padding: 24px;
+}
+
+.event-card-content h2 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  color: #4B347F;
+}
+
+.event-card-content span {
+  color: #6A4BBC;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 /* Lightbox */
@@ -104,7 +131,7 @@
   font-size: 14px;
 }
 
-/* Lightbox Close Button */
+/* Close Button */
 
 .lightbox-close {
   position: absolute;
@@ -122,7 +149,7 @@
   color: #F2EEFA;
 }
 
-/* Lightbox Navigation */
+/* Navigation */
 
 .lightbox-arrow {
   position: absolute;
@@ -154,7 +181,7 @@
 /* Tablet */
 
 @media (max-width: 900px) {
-  .gallery-grid {
+  .event-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -166,12 +193,12 @@
 /* Mobile */
 
 @media (max-width: 600px) {
-  .gallery-grid {
+  .event-grid {
     grid-template-columns: 1fr;
   }
 
-  .gallery-item {
-    height: 300px;
+  .event-card-image {
+    height: 280px;
   }
 
   .gallery-header h1 {
