@@ -11,11 +11,55 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #ffffff;
-  color: #222222;
+  color: #2f2f35;
 }
 
 button,
 input,
 textarea {
   font: inherit;
+}
+
+
+/* Theme Colours */
+
+:root {
+  --primary-purple: #6a4bbc;
+  --dark-purple: #4b347f;
+  --light-purple: #f2eefa;
+
+  --dark-grey: #2f2f35;
+  --medium-grey: #66666f;
+  --light-grey: #f5f5f7;
+
+  --white: #ffffff;
+}
+
+
+/* Global Links */
+
+a {
+  color: inherit;
+}
+
+
+/* Global Buttons */
+
+button {
+  cursor: pointer;
+}
+
+
+/* Images */
+
+img {
+  max-width: 100%;
+}
+
+
+/* Text Selection */
+
+::selection {
+  background-color: #6a4bbc;
+  color: #ffffff;
 }
