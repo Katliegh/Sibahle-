@@ -3,9 +3,9 @@ import "./Gallery.css";
 
 const events = [
   {
-    id: "mas-birthday",
-    title: "Massive Birthday",
-    cover: "/gallery/events/mas-birthday/1.jpg",
+    id: "massive-birthday",
+    title: "Ma's Birthday",
+    cover: "/images/gallery/events/massive-birthday/1.jpg",
     images: [
       "/images/gallery/events/massive-birthday/1.jpg",
       "/images/gallery/events/massive-birthday/2.jpg",
@@ -15,10 +15,11 @@ const events = [
       "/images/gallery/events/massive-birthday/6.jpg",
     ],
   },
+
   {
     id: "sports-day",
     title: "Sports Day",
-    cover: "/gallery/events/sports-day/1.jpg",
+    cover: "/images/gallery/events/sports-day/1.jpg",
     images: [
       "/images/gallery/events/sports-day/1.jpg",
       "/images/gallery/events/sports-day/2.jpg",
@@ -28,10 +29,11 @@ const events = [
       "/images/gallery/events/sports-day/6.jpg",
     ],
   },
+
   {
     id: "zoo",
     title: "Zoo",
-    cover: "/gallery/events/zoo/1.jpg",
+    cover: "/images/gallery/events/zoo/1.jpg",
     images: [
       "/images/gallery/events/zoo/1.jpg",
       "/images/gallery/events/zoo/2.jpg",
@@ -43,10 +45,11 @@ const events = [
       "/images/gallery/events/zoo/8.jpg",
     ],
   },
+
   {
-    id: "classroom activities",
+    id: "classroom-activities",
     title: "Classroom Activities",
-    cover: "/gallery/events/classroom-activities/1.jpg",
+    cover: "/images/gallery/events/classroom-activities/1.jpg",
     images: [
       "/images/gallery/events/classroom-activities/1.jpg",
       "/images/gallery/events/classroom-activities/2.jpg",
@@ -58,10 +61,11 @@ const events = [
       "/images/gallery/events/classroom-activities/8.jpg",
     ],
   },
+
   {
-    id: "principal",
+    id: "principal-visit",
     title: "Principal's Visit",
-    cover: "/gallery/events/principal/1.jpg",
+    cover: "/images/gallery/events/principal/1.jpg",
     images: [
       "/images/gallery/events/principal/1.jpg",
       "/images/gallery/events/principal/2.jpg",
@@ -72,10 +76,12 @@ const events = [
       "/images/gallery/events/principal/7.jpg",
       "/images/gallery/events/principal/8.jpg",
     ],
+  },
+
   {
     id: "pyjama-party",
     title: "Pyjama Party",
-    cover: "/gallery/events/pyjama-party/1.jpg",
+    cover: "/images/gallery/events/pyjama-party/1.jpg",
     images: [
       "/images/gallery/events/pyjama-party/1.jpg",
       "/images/gallery/events/pyjama-party/2.jpg",
@@ -122,7 +128,6 @@ function Gallery() {
   return (
     <main className="gallery-page">
 
-      {/* Gallery Header */}
       <section className="gallery-header">
         <div className="section-container">
           <p className="section-label">Gallery</p>
@@ -136,10 +141,8 @@ function Gallery() {
         </div>
       </section>
 
-      {/* Events */}
       <section className="gallery-section">
         <div className="section-container">
-
           <div className="event-grid">
             {events.map((event) => (
               <button
@@ -161,11 +164,9 @@ function Gallery() {
               </button>
             ))}
           </div>
-
         </div>
       </section>
 
-      {/* Event Lightbox */}
       {selectedEvent && selectedImage !== null && (
         <div className="lightbox">
 
@@ -186,7 +187,6 @@ function Gallery() {
           </button>
 
           <div className="lightbox-content">
-
             <img
               src={selectedEvent.images[selectedImage]}
               alt={`${selectedEvent.title} ${selectedImage + 1}`}
@@ -196,7 +196,6 @@ function Gallery() {
               {selectedEvent.title} · {selectedImage + 1} /{" "}
               {selectedEvent.images.length}
             </p>
-
           </div>
 
           <button
