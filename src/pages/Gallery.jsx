@@ -13,6 +13,14 @@ const events = [
       "/images/gallery/massive-birthday/4.jpg",
       "/images/gallery/massive-birthday/5.jpg",
       "/images/gallery/massive-birthday/6.jpg",
+      "/images/gallery/massive-birthday/7.jpg",
+      "/images/gallery/massive-birthday/8.jpg",
+      "/images/gallery/massive-birthday/9.jpg",
+      "/images/gallery/massive-birthday/10.jpg",
+      "/images/gallery/massive-birthday/11.jpg",
+      "/images/gallery/massive-birthday/12.jpg",
+      "/images/gallery/massive-birthday/13.jpg",
+      "/images/gallery/massive-birthday/14.jpg",
     ],
   },
 
@@ -95,6 +103,7 @@ const events = [
       "/images/gallery/pyjama-party/10.jpg",
       "/images/gallery/pyjama-party/11.jpg",
       "/images/gallery/pyjama-party/12.jpg",
+      "/images/gallery/pyjama-party/13.jpg",
     ],
   },
 ];
