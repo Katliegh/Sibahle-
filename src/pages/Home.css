@@ -3,7 +3,9 @@
 }
 
 
-/* Hero */
+/* ========================================
+   HERO
+======================================== */
 
 .hero {
   min-height: 650px;
@@ -93,13 +95,16 @@
 }
 
 
-/* General Sections */
+/* ========================================
+   GENERAL SECTIONS
+======================================== */
 
 .section-container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 90px 24px;
+  box-sizing: border-box;
 }
 
 .section-heading {
@@ -121,7 +126,9 @@
 }
 
 
-/* Upcoming Events */
+/* ========================================
+   UPCOMING EVENTS
+======================================== */
 
 .upcoming-events {
   background-color: #F2EEFA;
@@ -140,19 +147,25 @@
 
 .upcoming-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
+  align-items: stretch;
 }
 
 .upcoming-card {
+  min-width: 0;
+  min-height: 180px;
   display: flex;
   align-items: center;
   gap: 24px;
   padding: 30px;
+  box-sizing: border-box;
   background-color: #FFFFFF;
   border: 1px solid #E2E2E6;
   border-radius: 14px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .upcoming-card:hover {
@@ -160,43 +173,69 @@
   box-shadow: 0 10px 25px rgba(75, 52, 127, 0.12);
 }
 
+
+/* Event Date */
+
 .upcoming-date {
-  width: 85px;
-  min-width: 85px;
-  height: 95px;
+  width: 90px;
+  min-width: 90px;
+  height: 100px;
+  flex-shrink: 0;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  box-sizing: border-box;
+
   background-color: #6A4BBC;
   color: #FFFFFF;
+
   border-radius: 10px;
+
+  text-align: center;
+  overflow: hidden;
 }
 
 .upcoming-month {
+  display: block;
+  margin: 0;
+
   font-size: 14px;
+  line-height: 1.2;
   font-weight: 700;
   letter-spacing: 1px;
+
+  white-space: nowrap;
 }
 
 .upcoming-date strong {
-  margin-top: 5px;
+  display: block;
+  margin-top: 6px;
+
   font-size: 34px;
   line-height: 1;
 }
 
+
+/* Event Content */
+
 .upcoming-content {
+  min-width: 0;
   flex: 1;
 }
 
 .upcoming-content h3 {
-  margin-bottom: 10px;
+  margin: 0 0 10px;
+
   font-size: 24px;
   color: #4B347F;
 }
 
 .upcoming-content p {
-  margin-bottom: 10px;
+  margin: 0 0 10px;
+
   line-height: 1.6;
   color: #66666F;
 }
@@ -207,13 +246,18 @@
   font-weight: 600;
 }
 
+
+/* Upcoming Button */
+
 .upcoming-button {
   margin-top: 35px;
   text-align: center;
 }
 
 
-/* About */
+/* ========================================
+   ABOUT
+======================================== */
 
 .home-about {
   background-color: #FFFFFF;
@@ -232,6 +276,7 @@
 .text-link {
   display: inline-block;
   margin-top: 10px;
+
   color: #6A4BBC;
   text-decoration: none;
   font-weight: 600;
@@ -242,7 +287,9 @@
 }
 
 
-/* Programmes */
+/* ========================================
+   PROGRAMMES
+======================================== */
 
 .programmes {
   background-color: #F5F5F7;
@@ -256,15 +303,22 @@
 
 .programme-card {
   padding: 30px;
+
   background-color: #FFFFFF;
-  border-radius: 12px;
-  text-align: center;
+
   border: 1px solid #E2E2E6;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+
+  text-align: center;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .programme-card:hover {
   transform: translateY(-4px);
+
   box-shadow: 0 10px 25px rgba(75, 52, 127, 0.10);
 }
 
@@ -275,6 +329,7 @@
 
 .programme-card h3 {
   margin-bottom: 14px;
+
   font-size: 20px;
   color: #2F2F35;
 }
@@ -285,7 +340,9 @@
 }
 
 
-/* Hours */
+/* ========================================
+   OPERATING HOURS
+======================================== */
 
 .hours {
   background-color: #F2EEFA;
@@ -305,7 +362,9 @@
 .hours-list div {
   display: flex;
   justify-content: space-between;
+
   padding: 18px 0;
+
   border-bottom: 1px solid #E2E2E6;
 }
 
@@ -318,7 +377,9 @@
 }
 
 
-/* Contact */
+/* ========================================
+   CONTACT CTA
+======================================== */
 
 .contact-cta {
   text-align: center;
@@ -339,7 +400,9 @@
 }
 
 
-/* Tablet */
+/* ========================================
+   TABLET
+======================================== */
 
 @media (max-width: 900px) {
 
@@ -359,12 +422,17 @@
   .hours-list {
     width: 100%;
   }
+
 }
 
 
-/* Mobile */
+/* ========================================
+   MOBILE
+======================================== */
 
 @media (max-width: 700px) {
+
+  /* Hero */
 
   .hero {
     grid-template-columns: 1fr;
@@ -392,6 +460,9 @@
     align-items: flex-start;
   }
 
+
+  /* General */
+
   .section-container {
     padding: 65px 20px;
   }
@@ -403,19 +474,30 @@
     font-size: 32px;
   }
 
+
+  /* Programmes */
+
   .programme-grid {
     grid-template-columns: 1fr;
   }
 
+
+  /* Upcoming Events */
+
   .upcoming-card {
+    min-height: 0;
     padding: 24px;
     gap: 18px;
   }
 
   .upcoming-date {
-    width: 75px;
-    min-width: 75px;
-    height: 85px;
+    width: 78px;
+    min-width: 78px;
+    height: 90px;
+  }
+
+  .upcoming-month {
+    font-size: 13px;
   }
 
   .upcoming-date strong {
@@ -429,10 +511,13 @@
   .upcoming-content p {
     font-size: 15px;
   }
+
 }
 
 
-/* Small Mobile */
+/* ========================================
+   SMALL MOBILE
+======================================== */
 
 @media (max-width: 400px) {
 
@@ -448,17 +533,29 @@
     font-size: 38px;
   }
 
+
+  /* Upcoming Events */
+
   .upcoming-card {
     align-items: flex-start;
   }
 
   .upcoming-date {
-    width: 65px;
-    min-width: 65px;
-    height: 78px;
+    width: 70px;
+    min-width: 70px;
+    height: 82px;
+  }
+
+  .upcoming-month {
+    font-size: 12px;
   }
 
   .upcoming-date strong {
-    font-size: 26px;
+    font-size: 27px;
   }
+
+  .upcoming-content h3 {
+    font-size: 19px;
+  }
+
 }
