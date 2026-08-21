@@ -10,7 +10,7 @@ function Home() {
 
         <div className="hero-image">
           <img
-            src="/images/1.jpg"
+            src="/images/gallery/zoo/1.jpg"
             alt="Sibahle Day Care"
           />
         </div>
