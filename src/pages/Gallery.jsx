@@ -4,7 +4,7 @@ import "./Gallery.css";
 const events = [
   {
     id: "massive-birthday",
-    title: "Ma's Birthday",
+    title: "Massive Birthday",
     cover: "/images/gallery/massive-birthday/1.jpg",
     images: [
       "/images/gallery/massive-birthday/1.jpg",
