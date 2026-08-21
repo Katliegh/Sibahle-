@@ -1,5 +1,5 @@
 .programmes-section {
-  background: #fff;
+  background: #FFFFFF;
 }
 
 .programme-list {
@@ -12,23 +12,32 @@
   display: flex;
   gap: 24px;
   padding: 35px;
-  background: #f8f8f8;
+  background: #F5F5F7;
+  border: 1px solid #E2E2E6;
   border-radius: 14px;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.programme-item:hover {
+  border-color: #6A4BBC;
+  transform: translateY(-3px);
 }
 
 .programme-large-icon {
   font-size: 48px;
   flex-shrink: 0;
+  color: #6A4BBC;
 }
 
 .programme-item h2 {
   margin-bottom: 14px;
   font-size: 24px;
+  color: #4B347F;
 }
 
 .programme-item p {
   line-height: 1.6;
-  color: #666;
+  color: #66666F;
 }
 
 @media (max-width: 700px) {
@@ -38,5 +47,11 @@
 
   .programme-item {
     flex-direction: column;
+    gap: 18px;
+    padding: 28px;
+  }
+
+  .programme-large-icon {
+    font-size: 42px;
   }
 }
